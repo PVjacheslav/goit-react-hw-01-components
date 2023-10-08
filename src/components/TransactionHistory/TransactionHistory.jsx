@@ -1,27 +1,28 @@
 import styles from './TransactionHistory.module.css'
+import { TabConteiner, TabHead, Table, TabCellHead,TabCell } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
     return (
-        <section>
-            <table className={styles.transactionHistory}>
-                <thead>
+        <TabConteiner>
+            <Table>
+                <TabHead>
                     <tr>
-                        <th>Type</th>
-                        <th>Amount</th>
-                        <th>Currency</th>
+                        <TabCellHead>Type</TabCellHead>
+                        <TabCellHead>Amount</TabCellHead>
+                        <TabCellHead>Currency</TabCellHead>
                     </tr>
-                </thead>
+                </TabHead>
 
-                <tbody> {items.map(({ id, type, amount, currency }) => (
-                    <tr key={id}>
-                        <td>{type}</td>
-                        <td>{amount}</td>
-                        <td>{currency}</td>
+                <tbody>{items.map(({id, type, amount, currency}) => (
+                    <tr className={styles.tr} key={id}>
+                        <TabCell>{type}</TabCell>
+                        <TabCell>{amount}</TabCell>
+                        <TabCell>{currency}</TabCell>
                     </tr>
                 ))}
                 </tbody>
-            </table>
-        </section>
+            </Table>
+        </TabConteiner>
     );
 };
 
