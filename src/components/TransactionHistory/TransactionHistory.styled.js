@@ -31,4 +31,8 @@ export const TabCell = styled.th`
   font-weight: normal;
   padding: 10px;
   border: 1px solid #cbdcda;
+
+  & tr:nth-of-type(even) {
+    background-color: #cbdcda;
+  }
 `;

@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const ProCard = styled.section`
   width: 328px;
   height: 100%;
-  margin-left: 40px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #cbdcda;
   border-radius: 8px;
   box-shadow: 4px 4px 8px rgba(0, 0, 255, 0.3);

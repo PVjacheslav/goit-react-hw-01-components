@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ListItem = styled.div`
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 
   border-radius: 4px;
   background-color: #dbedeb;
