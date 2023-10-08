@@ -2,6 +2,7 @@ import { List, ListItem } from './FriendList.styled';
 import { FriendListItem } from './FriendListItem';
 
 export const FriendList = ({ friends }) => {
+  // console.log(friends);
   return (
     <List>
       {friends.map(({ avatar, name, isOnline, id }) => (

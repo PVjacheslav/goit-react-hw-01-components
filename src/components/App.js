@@ -1,6 +1,6 @@
 import { React, Component } from 'react';
 
-import initialUser from 'data/data.json';
+import initialUser from 'data/user.json';
 import initialChatFriends from '../data/friends.json';
 import initialTransaction from 'data/transactions.json';
 
@@ -31,7 +31,13 @@ export class App extends Component {
       //   color: '#010101'
       // }}
       >
-        <Profile user={userCard} />
+        <Profile
+          username={userCard.username}
+          tag={userCard.tag}
+          location={userCard.location}
+          avatar={userCard.avatar}
+          stats={userCard.stats}
+        />
         <FriendList friends={chatFriends} />
         <TransactionHistory items={tabTransaction} />
       </div>

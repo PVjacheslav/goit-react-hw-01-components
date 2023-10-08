@@ -1,4 +1,3 @@
-import styles from './TransactionHistory.module.css'
 import { TabConteiner, TabHead, Table, TabCellHead,TabCell } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
@@ -14,7 +13,7 @@ export const TransactionHistory = ({ items }) => {
                 </TabHead>
 
                 <tbody>{items.map(({id, type, amount, currency}) => (
-                    <tr className={styles.tr} key={id}>
+                    <tr key={id}>
                         <TabCell>{type}</TabCell>
                         <TabCell>{amount}</TabCell>
                         <TabCell>{currency}</TabCell>
