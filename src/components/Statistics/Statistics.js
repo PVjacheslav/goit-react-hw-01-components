@@ -12,7 +12,7 @@ export const StatisticData = ({ stats, title }) => {
   return (
     <Stats>
       <Title>Upload stats</Title>
-      {title !== 0 && <h2>{title}</h2>}
+      {title && <Title>{title}</Title>}
       <StatList>
         {stats.map(stat => (
           <StatItem
